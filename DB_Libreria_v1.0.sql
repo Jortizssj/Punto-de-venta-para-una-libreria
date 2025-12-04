@@ -1,0 +1,69 @@
+-- TALLER DE BASES DE DATOS - PROYECTO FINAL
+-- SCRIPT DE CREACIÓN DE BASE DE DATOS VENTAS MySQL
+
+-- 1. CREACIÓN Y USO DE LA BASE DE DATOS
+CREATE DATABASE IF NOT EXISTS VENTAS;
+USE VENTAS;
+
+-- 2. TABLA DE EMPLEADOS 
+CREATE TABLE EMPLEADOS (
+    ID_Empleado INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(100) NOT NULL,
+    Apellido VARCHAR(100) NOT NULL,
+    Cargo VARCHAR(50) NOT NULL,
+    Activo BOOLEAN DEFAULT TRUE -- Para borrado lógico
+);
+
+-- 3. TABLA DE USUARIOS 
+-- Las contraseñas se almacenan en HASH (encriptación no reversible)
+CREATE TABLE USUARIOS (
+    ID_Usuario INT PRIMARY KEY AUTO_INCREMENT,
+    NombreUsuario VARCHAR(50) NOT NULL UNIQUE,
+    Contrasena_Hash VARCHAR(128) NOT NULL,
+    Tipo_Usuario ENUM('Administrador', 'Vendedor') NOT NULL, -- 2 TIPOS DE USUARIOS
+    ID_Empleado INT NULL,
+    FechaCreacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (ID_Empleado) REFERENCES EMPLEADOS(ID_Empleado)
+);
+
+-- 4. TABLA DE PRODUCTOS
+CREATE TABLE PRODUCTOS (
+    CLAVE VARCHAR(20) PRIMARY KEY, -- Usamos ISBN como CLAVE (permite escanear)
+    NOMBRE VARCHAR(150) NOT NULL,
+    DESCRIPCION TEXT,
+    PRECIO DECIMAL(10, 2) NOT NULL CHECK (PRECIO >= 0),
+    STOCK INT NOT NULL CHECK (STOCK >= 0)
+);
+
+-- 5. TABLA DE VENTAS
+CREATE TABLE VENTAS (
+    ID_Venta INT PRIMARY KEY AUTO_INCREMENT,
+    Fecha_Hora DATETIME DEFAULT CURRENT_TIMESTAMP,
+    Total DECIMAL(10, 2) NOT NULL,
+    ID_Empleado INT,
+    FOREIGN KEY (ID_Empleado) REFERENCES EMPLEADOS(ID_Empleado)
+);
+
+-- 6. TABLA DE DETALLE DE VENTA
+CREATE TABLE DETALLE_VENTA (
+    ID_Detalle INT PRIMARY KEY AUTO_INCREMENT,
+    ID_Venta INT,
+    CLAVE_Producto VARCHAR(20),
+    Cantidad INT NOT NULL CHECK (Cantidad > 0),
+    Precio_Unitario DECIMAL(10, 2) NOT NULL, -- Precio al momento de la venta
+    -- Referencias a VENTA y PRODUCTOS
+    FOREIGN KEY (ID_Venta) REFERENCES VENTAS(ID_Venta),
+    FOREIGN KEY (CLAVE_Producto) REFERENCES PRODUCTOS(CLAVE)
+);
+
+-- 7. TABLA DE AUDITORÍA (Para MONITOREO DE PRODUCTOS)
+CREATE TABLE AUDITORIA_PRODUCTOS (
+    ID_Auditoria INT PRIMARY KEY AUTO_INCREMENT,
+    Fecha_Hora DATETIME DEFAULT CURRENT_TIMESTAMP, -- Hora y fecha del cambio
+    Tipo_Cambio VARCHAR(10) NOT NULL,      -- INSERT, UPDATE o DELETE
+    Usuario_DB VARCHAR(50) DEFAULT USER(), -- Usuario de la base de datos
+    CLAVE_Producto_Afectado VARCHAR(20) NOT NULL, -- CLAVE (ISBN) del producto
+    Campo_Afectado VARCHAR(50) NULL, -- Nombre de la columna cambiada (en UPDATE)
+    Valor_Anterior TEXT NULL, -- Valor antes del cambio
+    Valor_Nuevo TEXT NULL     -- Nuevo valor
+);

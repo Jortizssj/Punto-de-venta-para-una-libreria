@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_libreria
 {
-    internal class ProductoPOJO
+    public class ProductoPOJO
     {
         public string ClaveISBN { get; set; }
         public string Nombre { get; set; }
