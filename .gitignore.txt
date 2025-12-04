@@ -1,0 +1,13 @@
+.vs/
+[Dd]ebug/
+[Rr]elease/
+*.suo
+*.user
+.vshost.
+*.pdb
+bin/
+obj/
+packages/
+*.nupkg
+TestResults/
+Thumbs.db
