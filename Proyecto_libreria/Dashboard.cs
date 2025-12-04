@@ -107,5 +107,9 @@ namespace Proyecto_libreria
             this.Close();
         }
 
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

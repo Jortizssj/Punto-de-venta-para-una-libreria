@@ -30,13 +30,19 @@ namespace Proyecto_libreria
                 transaction = connection.BeginTransaction();
 
                 // 2. Insertar en la tabla VENTAS para obtener el ID_Venta
-                string queryVenta = "INSERT INTO VENTAS (Total, ID_Empleado) VALUES (@Total, @ID_Empleado); SELECT LAST_INSERT_ID();";
+                string queryVenta = "INSERT INTO VENTAS (Total, ID_Empleado) VALUES (@Total, @ID_Empleado); SELECT CAST(LAST_INSERT_ID() AS UNSIGNED);";
                 MySqlCommand cmdVenta = new MySqlCommand(queryVenta, connection, transaction);
                 cmdVenta.Parameters.AddWithValue("@Total", venta.Total);
                 cmdVenta.Parameters.AddWithValue("@ID_Empleado", venta.ID_Empleado);
 
-                // Ejecutar y obtener el ID_Venta generado
-                long idVentaGenerado = (long)cmdVenta.ExecuteScalar();
+                object result = cmdVenta.ExecuteScalar();
+
+                if (result == null || result == DBNull.Value)
+                {
+                    throw new Exception("Error al obtener el ID de la venta recién insertada.");
+                }
+
+                long idVentaGenerado = Convert.ToInt64(result);
 
                 // 3. Iterar sobre los detalles de la venta
                 foreach (var detalle in venta.Detalles)
@@ -55,7 +61,7 @@ namespace Proyecto_libreria
                     cmdDetalle.ExecuteNonQuery();
 
                     // B. Actualizar/Disminuir STOCK en PRODUCTOS (Esta acción activa el TRIGGER de auditoría)
-                    string queryStock = "UPDATE PRODUCTOS SET STOCK = STOCK - @Cantidad WHERE CLAVE = @Clave";
+                    string queryStock = "UPDATE PRODUCTOS SET STOCK = STOCK - @Cantidad WHERE CLAVE = @Clave AND STOCK >= @Cantidad";
 
                     MySqlCommand cmdStock = new MySqlCommand(queryStock, connection, transaction);
                     cmdStock.Parameters.AddWithValue("@Cantidad", detalle.Cantidad);
@@ -65,18 +71,15 @@ namespace Proyecto_libreria
 
                     if (filasAfectadas == 0)
                     {
-                        // Si no se actualizó el stock (ej: no existe el producto o el stock es insuficiente), forzamos un rollback
                         throw new Exception($"No se pudo actualizar el stock para el producto: {detalle.ClaveProducto}.");
                     }
                 }
 
-                // 4. Si todo fue exitoso, confirmar la transacción
                 transaction.Commit();
                 return true;
             }
             catch (Exception ex)
             {
-                // CONTROL DE ERRORES: Si algo falla, hacer rollback
                 Console.WriteLine("Error en la transacción de venta: " + ex.Message);
                 try
                 {
@@ -95,7 +98,6 @@ namespace Proyecto_libreria
             }
             finally
             {
-                // Cerrar la conexión
                 if (connection != null && connection.State == System.Data.ConnectionState.Open)
                 {
                     connection.Close();

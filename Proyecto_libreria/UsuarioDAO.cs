@@ -76,5 +76,60 @@ namespace Proyecto_libreria
             }
             return usuario;
         }
+        public bool RegistrarUsuario(UsuarioPOJO usuario, string passwordPlano)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(Conexion.CadenaConexionMySQL))
+                {
+                    connection.Open();
+                    string query = @"
+                        INSERT INTO USUARIOS (NombreUsuario, Contrasena_Hash, Tipo_Usuario, ID_Empleado) 
+                        VALUES (@User, @Hash, @Tipo, @IdEmp)";
+
+                    // Encriptar la contraseña nueva antes de guardarla
+                    string hash = Seguridad.ObtenerHashSHA256(passwordPlano);
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@User", usuario.NombreUsuario);
+                        command.Parameters.AddWithValue("@Hash", hash);
+                        command.Parameters.AddWithValue("@Tipo", usuario.Tipo_Usuario);
+                        command.Parameters.AddWithValue("@IdEmp", usuario.ID_Empleado);
+
+                        return command.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error de BD al registrar usuario: " + ex.Message);
+                return false;
+            }
+        }
+        public bool ActualizarTipoUsuario(int idEmpleado, string nuevoTipo)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(Conexion.CadenaConexionMySQL))
+                {
+                    connection.Open();
+                    string query = "UPDATE USUARIOS SET Tipo_Usuario = @Tipo WHERE ID_Empleado = @IdEmp";
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Tipo", nuevoTipo);
+                        command.Parameters.AddWithValue("@IdEmp", idEmpleado);
+
+                        return command.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error de BD al actualizar rol: " + ex.Message);
+                return false;
+            }
+        }
     }
 }

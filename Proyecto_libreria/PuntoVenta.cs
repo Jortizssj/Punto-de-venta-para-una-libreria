@@ -75,8 +75,9 @@ namespace Proyecto_libreria
         {
             txtISBN.TabIndex = 0;
             btnAgregar.TabIndex = 1;
-            btnCobrar.TabIndex = 2;
-
+            btnEliminar.TabIndex = 2;
+            btnCobrar.TabIndex = 3;
+            numCantidad.Value = 1;
             txtISBN.KeyPress += new KeyPressEventHandler(txtISBN_KeyPress);
         }
 
@@ -194,7 +195,6 @@ namespace Proyecto_libreria
 
         private void ActualizarCarrito()
         {
-            // Usar BindingSource o reasignar la fuente de datos para refrescar la DataGridView
             dataGridViewCarrito.DataSource = null;
             dataGridViewCarrito.DataSource = _carrito;
 
@@ -217,5 +217,22 @@ namespace Proyecto_libreria
             txtISBN.Focus();
         }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewCarrito.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione un producto para eliminar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DetalleVentaPOJO item = (DetalleVentaPOJO)dataGridViewCarrito.CurrentRow.DataBoundItem;
+
+            if (item != null)
+            {
+                _carrito.Remove(item); // Lo borramos de la lista
+                ActualizarCarrito();   // Refrescamos el grid y el total
+                txtISBN.Focus();       // Regresamos el foco al escáner
+            }
+        }
     }
 }

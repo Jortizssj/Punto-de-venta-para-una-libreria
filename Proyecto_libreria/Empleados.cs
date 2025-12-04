@@ -13,132 +13,290 @@ namespace Proyecto_libreria
     public partial class Empleados : Form
     {
         private EmpleadoDAO _empleadoDAO = new EmpleadoDAO();
-        private int _idEmpleadoSeleccionado = 0;
+        private UsuarioDAO _usuarioDAO = new UsuarioDAO();
+
+        // Variable para guardar el ID del empleado que se está editando
+        private int _idEmpleadoEdicion = 0;
+
         public Empleados()
         {
             InitializeComponent();
-            _empleadoDAO = new EmpleadoDAO();
-            CargarDatosEnCuadricula();
+            ConfigurarControles();
+            CargarDatos();
         }
 
-        private void CargarDatosEnCuadricula()
+        private void CargarDatos()
         {
             try
             {
-                // Uso del DAO para obtener datos via Stored Procedure
-                dataGridViewEmpleados.DataSource = _empleadoDAO.ObtenerTodosEmpleados();
+                DataTable dt = _empleadoDAO.ObtenerTodosEmpleados();
 
-                // Ocultar la columna de ID al usuario
+                dataGridViewEmpleados.DataSource = dt;
+
                 if (dataGridViewEmpleados.Columns.Contains("ID_Empleado"))
-                {
                     dataGridViewEmpleados.Columns["ID_Empleado"].Visible = false;
-                }
+
+                if (dataGridViewEmpleados.Columns.Contains("Activo"))
+                    dataGridViewEmpleados.Columns["Activo"].Visible = false;
+
+                if (dataGridViewEmpleados.Columns.Contains("Contrasena_Hash"))
+                    dataGridViewEmpleados.Columns["Contrasena_Hash"].Visible = false;
+
+                dataGridViewEmpleados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
             catch (Exception ex)
             {
-                // CONTROL DE ERRORES (TRY-CATCH-FINALLY)
-                MessageBox.Show("Error al cargar los empleados: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al cargar lista: " + ex.Message);
             }
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void ConfigurarControles()
         {
-            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellido.Text) || cmbCargo.SelectedIndex == -1)
+            dataGridViewEmpleados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewEmpleados.MultiSelect = false;
+            dataGridViewEmpleados.ReadOnly = true;
+
+            cmbTipo.Items.Clear();
+            cmbTipo.Items.Add("Administrador");
+            cmbTipo.Items.Add("Vendedor");
+            cmbTipo.SelectedIndex = 0;
+
+            LimpiarFormulario();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtApellido.Text) ||
+                string.IsNullOrWhiteSpace(txtUsuario.Text) ||
+                string.IsNullOrWhiteSpace(txtContrasenia.Text))
             {
-                MessageBox.Show("Debe completar todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Debe llenar: Nombre, Apellidos, Usuario y Contraseña.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 2. CREAR OBJETO POJO
-            EmpleadoPOJO empleado = new EmpleadoPOJO
-            {
-                ID_Empleado = _idEmpleadoSeleccionado,
-                Nombre = txtNombre.Text.Trim(),
-                Apellido = txtApellido.Text.Trim(),
-                Cargo = cmbCargo.SelectedItem.ToString()
-            };
-
-            // 3. LLAMADA A LA CAPA DE DATOS (Usando Stored Procedures)
             try
             {
-                bool resultado;
-                string mensaje;
-
-                if (_idEmpleadoSeleccionado > 0)
+                EmpleadoPOJO nuevoEmpleado = new EmpleadoPOJO
                 {
-                    // Actualizar (usa sp_ActualizarEmpleado)
-                    resultado = _empleadoDAO.ActualizarEmpleado(empleado);
-                    mensaje = "Empleado actualizado exitosamente.";
+                    Nombre = txtNombre.Text.Trim(),
+                    Apellido = txtApellido.Text.Trim(),
+                    Cargo = txtCargo.Text.Trim(),
+                    Activo = true
+                };
+
+                int idGenerado = _empleadoDAO.InsertarEmpleado(nuevoEmpleado);
+
+                if (idGenerado > 0)
+                {
+                    // 2. Insertar Usuario vinculado
+                    UsuarioPOJO nuevoUsuario = new UsuarioPOJO
+                    {
+                        NombreUsuario = txtUsuario.Text.Trim(),
+                        Tipo_Usuario = cmbTipo.SelectedItem.ToString(),
+                        ID_Empleado = idGenerado
+                    };
+
+                    if (_usuarioDAO.RegistrarUsuario(nuevoUsuario, txtContrasenia.Text.Trim()))
+                    {
+                        MessageBox.Show("Empleado registrado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LimpiarFormulario();
+                        CargarDatos();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Empleado creado, pero el usuario ya existe o falló.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    // Insertar (usa sp_InsertarEmpleado)
-                    resultado = _empleadoDAO.InsertarEmpleado(empleado);
-                    mensaje = "Empleado guardado exitosamente.";
-                }
-
-                if (resultado)
-                {
-                    MessageBox.Show(mensaje, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LimpiarFormulario();
-                    CargarDatosEnCuadricula();
-                }
-                else
-                {
-                    MessageBox.Show("Ocurrió un error al guardar el empleado.", "Error de BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No se pudo registrar el empleado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                // CONTROL DE ERRORES
-                MessageBox.Show("Error inesperado: " + ex.Message, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void btnGuardarCambios_Click(object sender, EventArgs e)
+        {
+            if (_idEmpleadoEdicion == 0) return;
+
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellido.Text))
+            {
+                MessageBox.Show("Nombre y Apellido son obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                EmpleadoPOJO empActualizado = new EmpleadoPOJO
+                {
+                    ID_Empleado = _idEmpleadoEdicion,
+                    Nombre = txtNombre.Text.Trim(),
+                    Apellido = txtApellido.Text.Trim(),
+                    Cargo = txtCargo.Text.Trim(),
+                    Activo = true
+                };
+
+                if (_empleadoDAO.ActualizarEmpleado(empActualizado))
+                {
+                    MessageBox.Show("Datos actualizados correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarFormulario();
+                    CargarDatos();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void LimpiarFormulario()
+        {
+            _idEmpleadoEdicion = 0;
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtCargo.Clear();
+            txtUsuario.Clear();
+            txtContrasenia.Clear();
+
+            cmbTipo.SelectedIndex = 0;
+
+            txtUsuario.Enabled = true;
+            txtContrasenia.Enabled = true;
+            cmbTipo.Enabled = true;
+
+            btnAgregar.Enabled = true;
+            btnEliminar.Enabled = true;
+            btnGuardarCambios.Enabled = false;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewEmpleados.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione un empleado del grid.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                DataGridViewRow row = dataGridViewEmpleados.CurrentRow;
+
+                if (row.Cells["ID_Empleado"].Value == null) return;
+
+                _idEmpleadoEdicion = Convert.ToInt32(row.Cells["ID_Empleado"].Value);
+
+                // Cargar TextBoxes
+                txtNombre.Text = row.Cells["Nombre"].Value?.ToString() ?? "";
+                txtApellido.Text = row.Cells["Apellido"].Value?.ToString() ?? "";
+                txtCargo.Text = row.Cells["Cargo"].Value?.ToString() ?? "";
+
+                // Cargar Usuario/Rol
+                if (dataGridViewEmpleados.Columns.Contains("NombreUsuario"))
+                    txtUsuario.Text = row.Cells["NombreUsuario"].Value?.ToString();
+
+                if (dataGridViewEmpleados.Columns.Contains("Tipo_Usuario"))
+                {
+                    string tipo = row.Cells["Tipo_Usuario"].Value?.ToString();
+                    if (cmbTipo.Items.Contains(tipo)) cmbTipo.SelectedItem = tipo;
+                }
+
+                txtUsuario.Enabled = false;
+                txtContrasenia.Enabled = false;
+                cmbTipo.Enabled = false;
+                txtContrasenia.Text = "";
+
+                btnAgregar.Enabled = false;
+                btnEliminar.Enabled = false;
+                btnGuardarCambios.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar datos: " + ex.Message);
+                LimpiarFormulario();
+            }
+        }
+
+        private void btnGuardarCambios_Click_1(object sender, EventArgs e)
+        {
+            if (_idEmpleadoEdicion == 0) return;
+
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellido.Text))
+            {
+                MessageBox.Show("Nombre y Apellido son obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                EmpleadoPOJO empActualizado = new EmpleadoPOJO
+                {
+                    ID_Empleado = _idEmpleadoEdicion,
+                    Nombre = txtNombre.Text.Trim(),
+                    Apellido = txtApellido.Text.Trim(),
+                    Cargo = txtCargo.Text.Trim(),
+                    Activo = true
+                };
+
+                if (_empleadoDAO.ActualizarEmpleado(empActualizado))
+                {
+                    MessageBox.Show("Datos actualizados correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarFormulario();
+                    CargarDatos();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (_idEmpleadoSeleccionado > 0)
+            if (dataGridViewEmpleados.CurrentRow == null)
             {
-                if (MessageBox.Show("¿Está seguro de que desea eliminar lógicamente a este empleado?", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                MessageBox.Show("Seleccione el empleado que desea eliminar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string nombre = dataGridViewEmpleados.CurrentRow.Cells["Nombre"].Value.ToString();
+            if (dataGridViewEmpleados.CurrentRow.Cells["ID_Empleado"].Value == null) return;
+            int idEmp = Convert.ToInt32(dataGridViewEmpleados.CurrentRow.Cells["ID_Empleado"].Value);
+
+            DialogResult result = MessageBox.Show($"¿Está seguro de eliminar a '{nombre}'? (Borrado Lógico)", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
                 {
-                    try
+                    if (_empleadoDAO.EliminarEmpleado(idEmp))
                     {
-                        // Eliminar lógicamente (usa sp_EliminarEmpleado)
-                        if (_empleadoDAO.EliminarEmpleado(_idEmpleadoSeleccionado))
-                        {
-                            MessageBox.Show("Empleado eliminado lógicamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            LimpiarFormulario();
-                            CargarDatosEnCuadricula();
-                        }
-                        else
-                        {
-                            MessageBox.Show("No se pudo eliminar al empleado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
+                        MessageBox.Show("Empleado eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LimpiarFormulario();
+                        CargarDatos();
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show("Error al intentar eliminar: " + ex.Message, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("No se pudo eliminar el empleado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al eliminar: " + ex.Message);
+                }
             }
-            else
-            {
-                MessageBox.Show("Seleccione un empleado de la lista para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            LimpiarFormulario();
-        }
-        private void LimpiarFormulario()
-        {
-            _idEmpleadoSeleccionado = 0;
-            txtNombre.Clear();
-            txtApellido.Clear();
-            cmbCargo.SelectedIndex = 0;
-            btnGuardar.Text = "Guardar";
-            txtNombre.Focus();
         }
     }
 }

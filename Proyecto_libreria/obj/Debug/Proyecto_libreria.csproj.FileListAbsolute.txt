@@ -1,6 +1,5 @@
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.csproj.AssemblyReference.cache
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.Dashboard.resources
-D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.Empleados.resources
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.Login.resources
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.MonitoreoProductos.resources
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.Productos.resources
@@ -46,4 +45,9 @@ D:\JuanJo\Proyecto_libreria\Proyecto_libreria\bin\Debug\System.Threading.Tasks.E
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto.6C2EF6BF.Up2Date
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.exe
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.pdb
+D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.Empleados.resources
+D:\JuanJo\Proyecto_libreria\Proyecto_libreria\bin\Debug\zxing.dll
+D:\JuanJo\Proyecto_libreria\Proyecto_libreria\bin\Debug\zxing.presentation.dll
+D:\JuanJo\Proyecto_libreria\Proyecto_libreria\bin\Debug\zxing.xml
+D:\JuanJo\Proyecto_libreria\Proyecto_libreria\bin\Debug\zxing.presentation.xml
 D:\JuanJo\Proyecto_libreria\Proyecto_libreria\obj\Debug\Proyecto_libreria.exe.config
