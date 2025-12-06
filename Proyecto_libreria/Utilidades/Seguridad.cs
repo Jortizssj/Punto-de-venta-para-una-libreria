@@ -20,7 +20,6 @@ namespace Proyecto_libreria
         /// <returns>Hash SHA-256 en formato hexadecimal.</returns>
         public static string ObtenerHashSHA256(string password)
         {
-            // Usamos SHA256 para ser consistente con la función SHA2(X, 256) de MySQL
             using (SHA256 sha256Hash = SHA256.Create())
             {
                 // Convertir el string a bytes para el hash
@@ -32,9 +31,6 @@ namespace Proyecto_libreria
                 {
                     builder.Append(bytes[i].ToString("x2"));
                 }
-
-                // Nota importante: MySQL SHA2(X, 256) devuelve un string de 64 caracteres.
-                // Esta implementación de C# también lo hace, asegurando la compatibilidad.
                 return builder.ToString();
             }
         }

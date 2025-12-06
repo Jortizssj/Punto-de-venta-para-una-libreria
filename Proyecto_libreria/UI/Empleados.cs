@@ -15,7 +15,6 @@ namespace Proyecto_libreria
         private EmpleadoDAO _empleadoDAO = new EmpleadoDAO();
         private UsuarioDAO _usuarioDAO = new UsuarioDAO();
 
-        // Variable para guardar el ID del empleado que se está editando
         private int _idEmpleadoEdicion = 0;
 
         public Empleados()
@@ -34,7 +33,7 @@ namespace Proyecto_libreria
                 dataGridViewEmpleados.DataSource = dt;
 
                 if (dataGridViewEmpleados.Columns.Contains("ID_Empleado"))
-                    dataGridViewEmpleados.Columns["ID_Empleado"].Visible = false;
+                    dataGridViewEmpleados.Columns["ID_Empleado"].Visible = false ;
 
                 if (dataGridViewEmpleados.Columns.Contains("Activo"))
                     dataGridViewEmpleados.Columns["Activo"].Visible = false;

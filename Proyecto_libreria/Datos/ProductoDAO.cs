@@ -12,7 +12,6 @@ namespace Proyecto_libreria
     {
         private readonly string connectionString = Conexion.CadenaConexionMySQL;
 
-        // Método para obtener todos los productos
         public DataTable ObtenerTodosProductos()
         {
             DataTable dt = new DataTable();

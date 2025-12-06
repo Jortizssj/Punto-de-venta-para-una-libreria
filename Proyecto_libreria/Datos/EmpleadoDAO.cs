@@ -12,8 +12,6 @@ namespace Proyecto_libreria
     {
         private readonly string connectionString = Conexion.CadenaConexionMySQL;
 
-        // Uso de TRY-CATCH-FINALLY para control de errores (REQUISITO DE COTEJO)
-
         /// <summary>
         /// Inserta un nuevo empleado utilizando el Stored Procedure 'sp_InsertarEmpleado'.
         /// </summary>

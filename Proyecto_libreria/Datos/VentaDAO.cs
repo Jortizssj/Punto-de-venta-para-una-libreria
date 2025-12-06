@@ -26,7 +26,6 @@ namespace Proyecto_libreria
                 connection = new MySqlConnection(connectionString);
                 connection.Open();
 
-                // 1. Iniciar la transacción
                 transaction = connection.BeginTransaction();
 
                 // 2. Insertar en la tabla VENTAS para obtener el ID_Venta
@@ -44,10 +43,8 @@ namespace Proyecto_libreria
 
                 long idVentaGenerado = Convert.ToInt64(result);
 
-                // 3. Iterar sobre los detalles de la venta
                 foreach (var detalle in venta.Detalles)
                 {
-                    // A. Insertar en DETALLE_VENTA
                     string queryDetalle = @"
                         INSERT INTO DETALLE_VENTA (ID_Venta, CLAVE_Producto, Cantidad, Precio_Unitario) 
                         VALUES (@ID_Venta, @Clave, @Cantidad, @Precio)";
@@ -60,7 +57,7 @@ namespace Proyecto_libreria
 
                     cmdDetalle.ExecuteNonQuery();
 
-                    // B. Actualizar/Disminuir STOCK en PRODUCTOS (Esta acción activa el TRIGGER de auditoría)
+                    // B. Actualizar STOCK en PRODUCTOS, activa el trigger
                     string queryStock = "UPDATE PRODUCTOS SET STOCK = STOCK - @Cantidad WHERE CLAVE = @Clave AND STOCK >= @Cantidad";
 
                     MySqlCommand cmdStock = new MySqlCommand(queryStock, connection, transaction);
@@ -86,14 +83,13 @@ namespace Proyecto_libreria
                     if (transaction != null)
                     {
                         transaction.Rollback();
-                        Console.WriteLine("Transacción deshecha (ROLLBACK).");
+                        Console.WriteLine("Transacción deshecha.");
                     }
                 }
                 catch (Exception rbEx)
                 {
                     Console.WriteLine("Error al intentar hacer rollback: " + rbEx.Message);
                 }
-                // Relanzar la excepción para que la Capa de Presentación la maneje.
                 throw new Exception("La venta no pudo ser completada. " + ex.Message, ex);
             }
             finally

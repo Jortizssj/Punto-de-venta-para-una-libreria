@@ -15,7 +15,5 @@ namespace Proyecto_libreria
         public string NombreUsuario { get; set; }
         public string Tipo_Usuario { get; set; } // Administrador o Vendedor
         public int ID_Empleado { get; set; }
-
-        // La Contrasena_Hash NO se expone fuera de la capa de datos.
     }
 }

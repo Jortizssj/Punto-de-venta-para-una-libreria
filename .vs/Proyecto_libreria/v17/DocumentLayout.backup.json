@@ -3,116 +3,56 @@
   "WorkspaceRootPath": "D:\\JuanJo\\Proyecto_libreria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\ventadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\ventadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\datos\\ventadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\datos\\ventadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\reporteunidadesvendidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\reporteunidadesvendidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\datos\\reportedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\datos\\reportedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\reporteunidadesvendidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\reporteunidadesvendidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\datos\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\datos\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\datos\\empleadodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\datos\\empleadodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\utilidades\\seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\utilidades\\seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\utilidades\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\utilidades\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\modelos\\detalleventapojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\modelos\\detalleventapojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\usuariopojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\usuariopojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\ui\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\ui\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\ui\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\ui\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\seguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\ui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\ui\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\reportedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\reportedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\productopojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\productopojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\productodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\empleadopojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\empleadopojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\empleadodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\empleadodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\detalleventapojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\detalleventapojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\monitoreoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\monitoreoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\monitoreoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\monitoreoproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\reporteventasvendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\reporteventasvendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\puntoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\puntoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\productos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\productos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|d:\\juanjo\\proyecto_libreria\\proyecto_libreria\\empleados.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\empleados.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\puntoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\puntoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|D:\\JuanJo\\Proyecto_libreria\\proyecto_libreria\\ventapojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C0287C9-C502-438A-AC91-27880E7C12CF}|Proyecto_libreria\\Proyecto_libreria.csproj|solutionrelative:proyecto_libreria\\ventapojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,72 +62,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Login.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Login.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_libreria\\Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\UI\\Login.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_libreria\\UI\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T05:46:56.155Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dashboard.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Dashboard.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Dashboard.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Dashboard.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_libreria\\Dashboard.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T06:04:08.844Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Empleados.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Empleados.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Empleados.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Empleados.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_libreria\\Empleados.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:33:12.719Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Productos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Productos.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Productos.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Productos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_libreria\\Productos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:04:25.749Z",
+              "WhenOpened": "2025-12-05T05:46:32.984Z",
               "IsPinned": true,
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReporteUnidadesVendidas.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ReporteUnidadesVendidas.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\ReporteUnidadesVendidas.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ReporteUnidadesVendidas.cs",
-              "RelativeToolTip": "Proyecto_libreria\\ReporteUnidadesVendidas.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAhwCgAAAAMAAAAAAAAAA==",
+              "Title": "ReporteDAO.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Datos\\ReporteDAO.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\Datos\\ReporteDAO.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Datos\\ReporteDAO.cs*",
+              "RelativeToolTip": "Proyecto_libreria\\Datos\\ReporteDAO.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T20:10:02.061Z",
+              "WhenOpened": "2025-12-05T15:40:22.786Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Datos\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\Datos\\UsuarioDAO.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Datos\\UsuarioDAO.cs",
+              "RelativeToolTip": "Proyecto_libreria\\Datos\\UsuarioDAO.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:36:25.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentaDAO.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Datos\\VentaDAO.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\Datos\\VentaDAO.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Datos\\VentaDAO.cs",
+              "RelativeToolTip": "Proyecto_libreria\\Datos\\VentaDAO.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwDMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:34:11.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmpleadoDAO.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Datos\\EmpleadoDAO.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\Datos\\EmpleadoDAO.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Datos\\EmpleadoDAO.cs",
+              "RelativeToolTip": "Proyecto_libreria\\Datos\\EmpleadoDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:34:03.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Seguridad.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Utilidades\\Seguridad.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\Utilidades\\Seguridad.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Utilidades\\Seguridad.cs",
+              "RelativeToolTip": "Proyecto_libreria\\Utilidades\\Seguridad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:33:50.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Utilidades\\Conexion.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\Utilidades\\Conexion.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Utilidades\\Conexion.cs",
+              "RelativeToolTip": "Proyecto_libreria\\Utilidades\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:33:14.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DetalleVentaPOJO.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Modelos\\DetalleVentaPOJO.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\Modelos\\DetalleVentaPOJO.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Modelos\\DetalleVentaPOJO.cs",
+              "RelativeToolTip": "Proyecto_libreria\\Modelos\\DetalleVentaPOJO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:33:00.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\UI\\Login.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Login.cs",
+              "RelativeToolTip": "Proyecto_libreria\\UI\\Login.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwCQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:00:08.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Empleados.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\UI\\Empleados.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Empleados.cs",
+              "RelativeToolTip": "Proyecto_libreria\\UI\\Empleados.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAowFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T14:56:40.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Empleados.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Empleados.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\UI\\Empleados.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Empleados.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_libreria\\UI\\Empleados.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T14:55:39.851Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Bookmark",
@@ -215,297 +232,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VentaDAO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\VentaDAO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\VentaDAO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\VentaDAO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\VentaDAO.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Dashboard.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Dashboard.cs",
+              "RelativeDocumentMoniker": "Proyecto_libreria\\UI\\Dashboard.cs",
+              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UI\\Dashboard.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_libreria\\UI\\Dashboard.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T03:41:16.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Login.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Login.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Login.cs",
-              "RelativeToolTip": "Proyecto_libreria\\Login.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAApwB8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:08:21.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReporteUnidadesVendidas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ReporteUnidadesVendidas.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\ReporteUnidadesVendidas.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ReporteUnidadesVendidas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_libreria\\ReporteUnidadesVendidas.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T18:44:22.684Z",
+              "WhenOpened": "2025-12-05T07:05:55.782Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsuarioDAO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UsuarioDAO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\UsuarioDAO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UsuarioDAO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\UsuarioDAO.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAwGwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T10:20:29.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Seguridad.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Seguridad.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Seguridad.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Seguridad.cs",
-              "RelativeToolTip": "Proyecto_libreria\\Seguridad.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T19:47:41.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Conexion.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Conexion.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Conexion.cs",
-              "RelativeToolTip": "Proyecto_libreria\\Conexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T19:48:19.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioPOJO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UsuarioPOJO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\UsuarioPOJO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\UsuarioPOJO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\UsuarioPOJO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T03:55:50.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "ReporteDAO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ReporteDAO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\ReporteDAO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ReporteDAO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\ReporteDAO.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T19:47:15.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductoPOJO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ProductoPOJO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\ProductoPOJO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ProductoPOJO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\ProductoPOJO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T03:07:47.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Program.cs",
               "RelativeDocumentMoniker": "Proyecto_libreria\\Program.cs",
               "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Program.cs",
               "RelativeToolTip": "Proyecto_libreria\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAWwBIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:59:25.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProductoDAO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ProductoDAO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\ProductoDAO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ProductoDAO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\ProductoDAO.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAA1wBEAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:52:25.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EmpleadoPOJO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\EmpleadoPOJO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\EmpleadoPOJO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\EmpleadoPOJO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\EmpleadoPOJO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T19:34:32.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EmpleadoDAO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\EmpleadoDAO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\EmpleadoDAO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\EmpleadoDAO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\EmpleadoDAO.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:56:05.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DetalleVentaPOJO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\DetalleVentaPOJO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\DetalleVentaPOJO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\DetalleVentaPOJO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\DetalleVentaPOJO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T19:46:12.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MonitoreoProductos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\MonitoreoProductos.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\MonitoreoProductos.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\MonitoreoProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_libreria\\MonitoreoProductos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T04:52:56.773Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MonitoreoProductos.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\MonitoreoProductos.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\MonitoreoProductos.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\MonitoreoProductos.cs",
-              "RelativeToolTip": "Proyecto_libreria\\MonitoreoProductos.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAhwEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T19:35:12.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ReporteVentasVendedor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ReporteVentasVendedor.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\ReporteVentasVendedor.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\ReporteVentasVendedor.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_libreria\\ReporteVentasVendedor.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T18:44:24.534Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PuntoVenta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\PuntoVenta.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\PuntoVenta.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\PuntoVenta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_libreria\\PuntoVenta.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T03:57:30.341Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Productos.Designer.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Productos.Designer.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Productos.Designer.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Productos.Designer.cs",
-              "RelativeToolTip": "Proyecto_libreria\\Productos.Designer.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAhwDkAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T18:20:38.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Empleados.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Empleados.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Empleados.cs",
-              "RelativeToolTip": "Proyecto_libreria\\Empleados.cs",
-              "ViewState": "AgIAABEBAAAAAAAAAAAwwCgBAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:36:11.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Empleados.Designer.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Empleados.Designer.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\Empleados.Designer.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\Empleados.Designer.cs",
-              "RelativeToolTip": "Proyecto_libreria\\Empleados.Designer.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAADwv8IAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T16:42:49.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "PuntoVenta.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\PuntoVenta.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\PuntoVenta.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\PuntoVenta.cs",
-              "RelativeToolTip": "Proyecto_libreria\\PuntoVenta.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAQwNEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T03:57:32.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "VentaPOJO.cs",
-              "DocumentMoniker": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\VentaPOJO.cs",
-              "RelativeDocumentMoniker": "Proyecto_libreria\\VentaPOJO.cs",
-              "ToolTip": "D:\\JuanJo\\Proyecto_libreria\\Proyecto_libreria\\VentaPOJO.cs",
-              "RelativeToolTip": "Proyecto_libreria\\VentaPOJO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T04:20:47.759Z",
+              "WhenOpened": "2025-12-05T05:45:42.843Z",
               "EditorCaption": ""
             }
           ]

@@ -45,6 +45,7 @@
             // 
             // btnPuntoVenta
             // 
+            this.btnPuntoVenta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnPuntoVenta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnPuntoVenta.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPuntoVenta.Location = new System.Drawing.Point(61, 133);
@@ -57,6 +58,7 @@
             // 
             // btnCRUD_Productos
             // 
+            this.btnCRUD_Productos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCRUD_Productos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCRUD_Productos.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCRUD_Productos.Location = new System.Drawing.Point(61, 451);
@@ -69,6 +71,7 @@
             // 
             // btnCRUD_Empleados
             // 
+            this.btnCRUD_Empleados.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCRUD_Empleados.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCRUD_Empleados.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCRUD_Empleados.Location = new System.Drawing.Point(294, 451);
@@ -81,30 +84,33 @@
             // 
             // btnVentasVendedor
             // 
+            this.btnVentasVendedor.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnVentasVendedor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnVentasVendedor.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVentasVendedor.Location = new System.Drawing.Point(61, 230);
             this.btnVentasVendedor.Name = "btnVentasVendedor";
             this.btnVentasVendedor.Size = new System.Drawing.Size(206, 45);
             this.btnVentasVendedor.TabIndex = 1;
-            this.btnVentasVendedor.Text = "Ventas de un empleado";
+            this.btnVentasVendedor.Text = "Ventas empleado";
             this.btnVentasVendedor.UseVisualStyleBackColor = false;
             this.btnVentasVendedor.Click += new System.EventHandler(this.btnVentasVendedor_Click);
             // 
             // btnUnidadesVendidas
             // 
+            this.btnUnidadesVendidas.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnUnidadesVendidas.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnUnidadesVendidas.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUnidadesVendidas.Location = new System.Drawing.Point(294, 230);
             this.btnUnidadesVendidas.Name = "btnUnidadesVendidas";
             this.btnUnidadesVendidas.Size = new System.Drawing.Size(205, 45);
             this.btnUnidadesVendidas.TabIndex = 2;
-            this.btnUnidadesVendidas.Text = "Ventas de un libro";
+            this.btnUnidadesVendidas.Text = "Ventas de libros";
             this.btnUnidadesVendidas.UseVisualStyleBackColor = false;
             this.btnUnidadesVendidas.Click += new System.EventHandler(this.btnUnidadesVendidas_Click);
             // 
             // btnMonitoreo
             // 
+            this.btnMonitoreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnMonitoreo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMonitoreo.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMonitoreo.Location = new System.Drawing.Point(61, 337);
@@ -117,6 +123,7 @@
             // 
             // btnCerrarSesion
             // 
+            this.btnCerrarSesion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCerrarSesion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -130,6 +137,7 @@
             // 
             // lblRol
             // 
+            this.lblRol.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblRol.AutoSize = true;
             this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRol.ForeColor = System.Drawing.Color.Thistle;
@@ -141,6 +149,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -152,6 +161,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -163,6 +173,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -174,6 +185,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -185,6 +197,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;

@@ -23,10 +23,8 @@ namespace Proyecto_libreria
         {
             UsuarioPOJO usuario = null;
 
-            // 1. Obtener el hash de la contraseña ingresada
             string hashIngresado = Seguridad.ObtenerHashSHA256(passwordTextoPlano);
 
-            // Uso de TRY-CATCH-FINALLY para control de errores (REQUISITO DE COTEJO)
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(Conexion.CadenaConexionMySQL))
@@ -48,7 +46,6 @@ namespace Proyecto_libreria
                         {
                             if (reader.Read())
                             {
-                                // Obtener ordinals una vez
                                 int ordId = reader.GetOrdinal("ID_Usuario");
                                 int ordNombre = reader.GetOrdinal("NombreUsuario");
                                 int ordTipo = reader.GetOrdinal("Tipo_Usuario");
@@ -59,8 +56,6 @@ namespace Proyecto_libreria
                                     ID_Usuario = reader.GetInt32(ordId),
                                     NombreUsuario = reader.IsDBNull(ordNombre) ? string.Empty : reader.GetString(ordNombre),
                                     Tipo_Usuario = reader.IsDBNull(ordTipo) ? string.Empty : reader.GetString(ordTipo),
-
-                                    // Verifica si es NULL. Si es NULL, asigna 0. Si no, lee el entero.
                                     ID_Empleado = reader.IsDBNull(ordEmpleado) ? 0 : reader.GetInt32(ordEmpleado)
                                 };
                             }
@@ -70,7 +65,6 @@ namespace Proyecto_libreria
             }
             catch (MySqlException ex)
             {
-                // Control de errores de la base de datos
                 Console.WriteLine("Error de BD durante el login: " + ex.Message);
                 throw new Exception("Error al conectar con la base de datos. Consulte al administrador.", ex);
             }

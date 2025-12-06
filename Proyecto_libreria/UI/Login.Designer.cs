@@ -89,6 +89,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnIngresar);
@@ -105,6 +106,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::Proyecto_libreria.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(379, 12);
             this.pictureBox1.Name = "pictureBox1";

@@ -26,7 +26,7 @@ namespace Proyecto_libreria
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    // La consulta ordena por Fecha_Hora descendente (más reciente primero)
+                    // La consulta ordena por Fecha_Hora descendente
                     string query = @"
                         SELECT 
                             Fecha_Hora, 

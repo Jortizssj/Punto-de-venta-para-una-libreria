@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Proyecto_libreria
 {
+    /// <summary>
+    /// Representa la entidad Producto, utilizada para las ventas.
+    /// </summary>
     public class ProductoPOJO
     {
         public string ClaveISBN { get; set; }
@@ -16,7 +19,6 @@ namespace Proyecto_libreria
 
         public ProductoPOJO()
         {
-            // Constructor por defecto
         }
     }
 }

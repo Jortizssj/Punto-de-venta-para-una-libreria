@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -35,11 +36,10 @@ namespace Proyecto_libreria
                         INNER JOIN EMPLEADOS E ON V.ID_Empleado = E.ID_Empleado
                         WHERE V.Fecha_Hora BETWEEN @fechaInicio AND @fechaFin
                         GROUP BY E.ID_Empleado, E.Nombre, E.Apellido
-                        ORDER BY MONTO_VENDIDO DESC"; // Ordenar de mayor a menor (REQUISITO)
+                        ORDER BY MONTO_VENDIDO DESC";
 
                     MySqlCommand command = new MySqlCommand(query, connection);
 
-                    // Aseguramos que la fecha de fin incluya el final del día
                     command.Parameters.AddWithValue("@fechaInicio", fechaInicio.Date);
                     command.Parameters.AddWithValue("@fechaFin", fechaFin.Date.AddDays(1).AddSeconds(-1));
 
@@ -65,20 +65,19 @@ namespace Proyecto_libreria
             {
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
-                    // Consulta: Agrega la cantidad de libros vendidos por mes/año
                     string query = @"
                         SELECT
                             P.CLAVE AS ISBN,
                             P.NOMBRE AS TITULO,
                             P.DESCRIPCION AS DESCRIPCION,
-                            P.PRECIO AS COSTO, -- Precio del catálogo (se puede modificar para usar Precio_Unitario de DETALLE_VENTA)
+                            P.PRECIO AS COSTO,
                             SUM(DV.Cantidad) AS UNIDADES_VENDIDAS
                         FROM DETALLE_VENTA DV
                         INNER JOIN VENTAS V ON DV.ID_Venta = V.ID_Venta
                         INNER JOIN PRODUCTOS P ON DV.CLAVE_Producto = P.CLAVE
                         WHERE MONTH(V.Fecha_Hora) = @mes AND YEAR(V.Fecha_Hora) = @anio
                         GROUP BY P.CLAVE, P.NOMBRE, P.DESCRIPCION, P.PRECIO
-                        ORDER BY P.NOMBRE ASC"; // Ordenar alfabéticamente por nombre del libro (REQUISITO)
+                        ORDER BY P.NOMBRE ASC"; 
 
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@mes", mes);

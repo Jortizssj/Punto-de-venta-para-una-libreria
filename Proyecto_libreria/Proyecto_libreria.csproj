@@ -101,82 +101,82 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuditoriaDAO.cs" />
-    <Compile Include="Conexion.cs" />
-    <Compile Include="Dashboard.cs">
+    <Compile Include="Datos\AuditoriaDAO.cs" />
+    <Compile Include="Utilidades\Conexion.cs" />
+    <Compile Include="UI\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
+    <Compile Include="UI\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetalleVentaPOJO.cs" />
-    <Compile Include="EmpleadoDAO.cs" />
-    <Compile Include="EmpleadoPOJO.cs" />
-    <Compile Include="Empleados.cs">
+    <Compile Include="Modelos\DetalleVentaPOJO.cs" />
+    <Compile Include="Datos\EmpleadoDAO.cs" />
+    <Compile Include="Modelos\EmpleadoPOJO.cs" />
+    <Compile Include="UI\Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empleados.Designer.cs">
+    <Compile Include="UI\Empleados.Designer.cs">
       <DependentUpon>Empleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="UI\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MonitoreoProductos.cs">
+    <Compile Include="UI\MonitoreoProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MonitoreoProductos.Designer.cs">
+    <Compile Include="UI\MonitoreoProductos.Designer.cs">
       <DependentUpon>MonitoreoProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductoDAO.cs" />
-    <Compile Include="ProductoPOJO.cs" />
-    <Compile Include="Productos.cs">
+    <Compile Include="Datos\ProductoDAO.cs" />
+    <Compile Include="Modelos\ProductoPOJO.cs" />
+    <Compile Include="UI\Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos.Designer.cs">
+    <Compile Include="UI\Productos.Designer.cs">
       <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuntoVenta.cs">
+    <Compile Include="UI\PuntoVenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PuntoVenta.Designer.cs">
+    <Compile Include="UI\PuntoVenta.Designer.cs">
       <DependentUpon>PuntoVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteDAO.cs" />
-    <Compile Include="ReporteUnidadesVendidas.cs">
+    <Compile Include="Datos\ReporteDAO.cs" />
+    <Compile Include="UI\ReporteUnidadesVendidas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteUnidadesVendidas.Designer.cs">
+    <Compile Include="UI\ReporteUnidadesVendidas.Designer.cs">
       <DependentUpon>ReporteUnidadesVendidas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteVentasVendedor.cs">
+    <Compile Include="UI\ReporteVentasVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReporteVentasVendedor.Designer.cs">
+    <Compile Include="UI\ReporteVentasVendedor.Designer.cs">
       <DependentUpon>ReporteVentasVendedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Seguridad.cs" />
-    <Compile Include="UsuarioDAO.cs" />
-    <Compile Include="UsuarioPOJO.cs" />
-    <Compile Include="VentaDAO.cs" />
-    <Compile Include="VentaPOJO.cs" />
-    <EmbeddedResource Include="Dashboard.resx">
+    <Compile Include="Utilidades\Seguridad.cs" />
+    <Compile Include="Datos\UsuarioDAO.cs" />
+    <Compile Include="Modelos\UsuarioPOJO.cs" />
+    <Compile Include="Datos\VentaDAO.cs" />
+    <Compile Include="Modelos\VentaPOJO.cs" />
+    <EmbeddedResource Include="UI\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleados.resx">
+    <EmbeddedResource Include="UI\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MonitoreoProductos.resx">
+    <EmbeddedResource Include="UI\MonitoreoProductos.resx">
       <DependentUpon>MonitoreoProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos.resx">
+    <EmbeddedResource Include="UI\Productos.resx">
       <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -189,13 +189,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="PuntoVenta.resx">
+    <EmbeddedResource Include="UI\PuntoVenta.resx">
       <DependentUpon>PuntoVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteUnidadesVendidas.resx">
+    <EmbeddedResource Include="UI\ReporteUnidadesVendidas.resx">
       <DependentUpon>ReporteUnidadesVendidas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteVentasVendedor.resx">
+    <EmbeddedResource Include="UI\ReporteVentasVendedor.resx">
       <DependentUpon>ReporteVentasVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -215,5 +215,6 @@
   <ItemGroup>
     <None Include="Resources\logo.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
